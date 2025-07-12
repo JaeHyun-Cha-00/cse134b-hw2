@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/project.html">Projects</a>
+                </li>
+                <li>
+                    <a href="/experience.html">Experience</a>
+                </li>
+                <li>
+                    <a href="/contact.html">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+        <fieldset>
+            <legend>Contact Me</legend>
+      
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+      
+            <label for="email">Email:</label><br>
+            <input list="email-domains" id="email" name="email" required>
+            <datalist id="email-domains">
+              <option value="jaehyuncha@gmail.com">
+              <option value="jaehyuncha@ucsd.edu">
+              <option value="jaehyun.dev@gmail.com">
+            </datalist><br>
+      
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="5" cols="40" required></textarea><br>
+      
+            <button>Submit</button>
+          </fieldset>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

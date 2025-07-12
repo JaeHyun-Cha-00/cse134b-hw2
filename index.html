@@ -4,28 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jae Hyun Cha's Website</title>
-    <link rel="stylesheet" type="css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
 
     </style>
 </head>
 <body>
     <header>
-        <h1> Hi, my name is <em>Jae Hyun</em> :)</h1>
-    </header>
-    
-    <main>
-
-        <section>
-            <img src = "Profile.png">
-            <h2> Name </h2>
-            <h3> Student </h3>
-        </section>
-        
-        <section> 
-            <a href="Github.com">Github</a>
-            <a href="Linkedin.com">Linkedin</a>
-        </section>
+        <hgroup>
+            <h1> Hi, my name is <em>Jae Hyun</em> :)</h1>
+            <h2> Nice to meet you!</h2>
+        </hgroup>
 
         <nav>
             <ul>
@@ -33,31 +22,106 @@
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="">Projects</a>
+                    <a href="/project.html">Projects</a>
                 </li>
                 <li>
-                    <a href="">Experience</a>
+                    <a href="/experience.html">Experience</a>
                 </li>
                 <li>
-                    <a href="">Contact Me</a>
+                    <a href="/contact.html">Contact Me</a>
+                </li>
+                <li>
+                    <a href="/lab.html">Lab / Experiment</a>
                 </li>
             </ul>
         </nav>
+    </header>
+    
+    <hr>
+
+    <main>
 
         <section>
-            <h1>About Me</h1>
+
+            <picture>
+                <source srcset="assets/images/profile.JPG">
+                <img
+                  src="assets/images/profile.JPG"
+                  alt="Profile Picture"
+                  style="width: 200px; height: auto"
+                >
+            </picture>
+            
+            <table>
+                <caption>Personal Information</caption>
+                <colgroup>
+                  <col span="1">
+                  <col span="1">
+                </colgroup>
+                <tr>
+                  <th>Name:</th>
+                  <td>Jae Hyun Cha</td>
+                </tr>
+                <tr>
+                  <th>Major:</th>
+                  <td>CS</td>
+                </tr>
+                <tr>
+                  <th>School:</th>
+                  <td>UCSD</td>
+                </tr>
+              </table>
+              
+
+        </section>
+        
+        <section> 
+            <a href="Github.com">Github</a>
+            <a href="Linkedin.com">Linkedin</a>
+        </section>
+
+        <section>
+            <h2>About Me</h2>
             <p>
-                About Me Description
+                I'm a Computer Science student currently studying at <abbr title="University of California, San Diego">UCSD</abbr>, with a strong interest in backend development, system design, and applied machine learning. 
+                I enjoy designing robust APIs, building scalable infrastructure, and writing clean, maintainable code that adheres to modern software engineering principles.
+            </p>
+        </section>
+
+        <section>
+            <dialog open>
+                <p>This is a preview version of my resume.</p>
+              </dialog>
+        </section>
+
+        <section>
+            <h2> Skills </h2>
+            <label for="upload">Java</label>
+            <progress id="upload" value="60" max="100">60%</progress>
+            <p>
+                Previously studied <del>Java</del>, now focusing on <ins>Python</ins>.
             </p>
         </section>
 
         <aside>
-
+            
+            Favorite song : "Everything" by The Black Skirts. <audio></audio> 
+            
+            Favorite Soccer Team : Atletico madrid <video></video>
+            
+            Favorite Quote : <blockquote>
+              "Stay hungry, stay foolish."
+              <footer>— <cite>Steve Jobs</cite></footer>
+            </blockquote>
         </aside>
     </main>
 
     <footer>
-        <p>Copyright</p>
+        <p>Copyright by <i><b>Jae Hyun Cha</b></i></p>
+        <address>
+            Email: jaehyuncha@example.com<br>
+            Location: San Diego, CA
+          </address>
     </footer>
 </body>
 </html>
