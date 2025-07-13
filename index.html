@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jae Hyun Cha's personal website portfolio. Computer Science student at UCSD.">
     
-    <meta name="keywords" content="Jae Hyun, UCSD, CS, Portfolio, Developer">
+    <meta name="keywords" content="Jae Hyun, UCSD, CS, Developer">
     <meta name="author" content="Jae Hyun Cha">
 
+    <!-- Social Media -->
     <meta property="og:title" content="Jae Hyun Cha's Portfolio">
     <meta property="og:description" content="Hi! I'm Jae Hyun, a CS student at UCSD.">
     
     <title>Jae Hyun Cha's Website</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- Extra Credit -->
     <style>
         profile-card {
         display: block;
-        max-width: 40ch;
+        max-width: 60ch;
         padding: 1.5rem;
         border: 0.125rem solid #ccc;
         border-radius: 0.625rem;
-        background-color: #f8f8f8;
+        background-color: lightgray;
         }
     </style>
 </head>
@@ -44,6 +47,7 @@
                 </li>
                 <li>
                     <a href="/lab.html">Lab / Experiment</a>
+                    <span>(Putting Experiment thing here!)</span>
                 </li>
             </ul>
         </nav>
@@ -52,19 +56,32 @@
     <hr>
 
     <main>
+        
+        <!-- Extra Credit -->
+        <hello-box></hello-box>
+  
+        <script>
+          class HelloBox extends HTMLElement {
+            connectedCallback() {
+              console.log("Hello world!");
+            }
+          }
+      
+          customElements.define("hello-box", HelloBox);
+        </script>
 
         <profile-card>
             <h2>Profile</h2>
             <picture>
-                <source srcset="assets/images/profile.JPG">
+                <source srcset="assets/img/profile.png">
                 <img
-                  src="assets/images/profile.JPG"
+                  src="assets/img/profile.png"
                   alt="Profile Picture"
-                  style="width: 200px; height: auto"
                 >
             </picture>
             
             <table>
+                <caption>Demographics</caption>
                 <colgroup>
                   <col span="1">
                   <col span="1">
@@ -109,32 +126,38 @@
             <progress id="skill_c++" value="50" max="100"></progress>
             
             <p>
-                Previously coded mainly with <del>Java</del>, now mainly code with <ins>Python</ins>.
+                Previously coded mainly with <del>Java</del>, now mainly code with <strong><ins>Python</ins></strong>.
             </p>
         </section>
 
         <aside>
-            <h2>TMI</h2>
+            <h3>TMI</h3>
             Favorite song : "Everything" by The Black Skirts <br>
             
             Favorite Soccer Team : Atletico madrid <br>
             
+            <iframe 
+            src="https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid">
+            </iframe>
+
+            <br>
+
             Favorite Quote : <blockquote>
-              "Stay hungry, stay foolish."
-              <footer>— <cite>Steve Jobs</cite></footer>
+              "The more you know, the more you realize you don't know."
+              <footer>— <cite>Aristotle</cite></footer>
             </blockquote>
         </aside>
     </main>
 
     <footer>
-        <p>Copyright by <i><b>Jae Hyun Cha</b></i></p>
+        <p> &copy; 2025 <i><b>Jae Hyun Cha</b></i></p>
         
         <address>
-            e-mail: j4cha@ucsd.edu
+            e-mail: j4cha@ucsd.edu<br>
         </address>
           
         <noscript>
-            JavaScript is disabled in your browser. Please enable it to use all features of this site.
+            JavaScript is disabled in your browser. Enable JavaScript to use features of this site.
         </noscript>
     </footer>
 </body>

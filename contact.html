@@ -27,23 +27,22 @@
 
     <main>
 
+        <hgroup>
+            <h1>Contact Me</h1>
+            <p>There is a submission form below</p>
+        </hgroup>
+
         <pre>
             Background music and nature sounds are playing...
             
-            Relax and enjoy for a moment.
+            Relax for a moment.
             
             When you're ready, feel free to fill out the form below.
         </pre>
 
         <audio controls>
-        <source src="/media/birds.mp3" type="audio/mp3">
+        <source src="assets/audio/waterfall_bird.mp3" type="audio/mp3">
         </audio>
-
-        <br>
-
-        <video width="300" height="300" controls>
-        <source src="/media/water.mp4" type="video/mp4">
-        </video>
 
         <form>
           <fieldset>
@@ -56,22 +55,29 @@
             <input type="email" id="email" name="email" autocomplete="email"><br><br>
           
             <label for="comment">Comment:</label><br>
-            <textarea id="comment" name="comment" rows="5" cols="40" required></textarea><br><br>
+            <textarea id="comment" name="comment" required></textarea><br><br>
           
             <button type="submit">Submit</button>
           </fieldset>
         </form>
+
+        <template id="thank-you-template">
+            <div>
+              <h3>Thank you for reaching out!</h3>
+              <p>I’ll get back to you as soon as possible.</p>
+            </div>
+        </template>
     </main>
 
     <footer>
         <p> &copy; 2025 <i><b>Jae Hyun Cha</b></i></p>
         
         <address>
-            e-mail: j4cha@ucsd.edu
+            e-mail: j4cha@ucsd.edu<br>
         </address>
           
         <noscript>
-            JavaScript is disabled in your browser. Please enable it to use all features of this site.
+            JavaScript is disabled in your browser. Enable JavaScript to use features of this site.
         </noscript>
     </footer>
 </body>
