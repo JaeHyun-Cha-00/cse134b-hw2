@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <hello-box></hello-box>
+
+  <script>
+    class HelloBox extends HTMLElement {
+      connectedCallback() {
+        console.log("Hello world!");
+      }
+    }
+
+    customElements.define("hello-box", HelloBox);
+  </script>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+      <mi>E</mi>
+      <mo>=</mo>
+      <mi>m</mi>
+      <msup>
+        <mi>c</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </math>
+
+  <p>Use the <code>&lt;section&gt;</code> tag to group related content on your webpage.</p>
+</body>
+</html>

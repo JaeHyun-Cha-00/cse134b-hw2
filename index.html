@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jae Hyun Cha's personal website portfolio. Computer Science student at UCSD.">
+    
+    <meta name="keywords" content="Jae Hyun, UCSD, CS, Portfolio, Developer">
+    <meta name="author" content="Jae Hyun Cha">
+
+    <meta property="og:title" content="Jae Hyun Cha's Portfolio">
+    <meta property="og:description" content="Hi! I'm Jae Hyun, a CS student at UCSD.">
+    
     <title>Jae Hyun Cha's Website</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-
+        profile-card {
+        display: block;
+        max-width: 40ch;
+        padding: 1.5rem;
+        border: 0.125rem solid #ccc;
+        border-radius: 0.625rem;
+        background-color: #f8f8f8;
+        }
     </style>
 </head>
 <body>
     <header>
-        <hgroup>
-            <h1> Hi, my name is <em>Jae Hyun</em> :)</h1>
-            <h2> Nice to meet you!</h2>
-        </hgroup>
+        <h1> Hi, my name is <em>Jae Hyun</em> :)</h1>
 
         <nav>
             <ul>
@@ -41,8 +53,8 @@
 
     <main>
 
-        <section>
-
+        <profile-card>
+            <h2>Profile</h2>
             <picture>
                 <source srcset="assets/images/profile.JPG">
                 <img
@@ -53,7 +65,6 @@
             </picture>
             
             <table>
-                <caption>Personal Information</caption>
                 <colgroup>
                   <col span="1">
                   <col span="1">
@@ -64,50 +75,49 @@
                 </tr>
                 <tr>
                   <th>Major:</th>
-                  <td>CS</td>
+                  <td>Computer Science</td>
                 </tr>
                 <tr>
                   <th>School:</th>
                   <td>UCSD</td>
                 </tr>
-              </table>
-              
-
-        </section>
+            </table>
+        </profile-card>        
         
-        <section> 
+        <div> 
             <a href="Github.com">Github</a>
             <a href="Linkedin.com">Linkedin</a>
-        </section>
+        </div>
 
         <section>
             <h2>About Me</h2>
             <p>
-                I'm a Computer Science student currently studying at <abbr title="University of California, San Diego">UCSD</abbr>, with a strong interest in backend development, system design, and applied machine learning. 
+                I'm a Computer Science student currently studying at <abbr title="University of California, San Diego">UCSD</abbr>, with a strong interest in backend development, system design, and applied machine learning. <br>
                 I enjoy designing robust APIs, building scalable infrastructure, and writing clean, maintainable code that adheres to modern software engineering principles.
             </p>
         </section>
 
         <section>
-            <dialog open>
-                <p>This is a preview version of my resume.</p>
-              </dialog>
-        </section>
-
-        <section>
             <h2> Skills </h2>
-            <label for="upload">Java</label>
-            <progress id="upload" value="60" max="100">60%</progress>
+            <label for="skill_python">Python</label>
+            <progress id="skill_python" value="90" max="100"></progress> <br>
+
+            <label for="skill_java">Java</label>
+            <progress id="skill_java" value="70" max="100"></progress> <br>
+
+            <label for="skill_c++">C++</label>
+            <progress id="skill_c++" value="50" max="100"></progress>
+            
             <p>
-                Previously studied <del>Java</del>, now focusing on <ins>Python</ins>.
+                Previously coded mainly with <del>Java</del>, now mainly code with <ins>Python</ins>.
             </p>
         </section>
 
         <aside>
+            <h2>TMI</h2>
+            Favorite song : "Everything" by The Black Skirts <br>
             
-            Favorite song : "Everything" by The Black Skirts. <audio></audio> 
-            
-            Favorite Soccer Team : Atletico madrid <video></video>
+            Favorite Soccer Team : Atletico madrid <br>
             
             Favorite Quote : <blockquote>
               "Stay hungry, stay foolish."
@@ -118,10 +128,14 @@
 
     <footer>
         <p>Copyright by <i><b>Jae Hyun Cha</b></i></p>
+        
         <address>
-            Email: jaehyuncha@example.com<br>
-            Location: San Diego, CA
-          </address>
+            e-mail: j4cha@ucsd.edu
+        </address>
+          
+        <noscript>
+            JavaScript is disabled in your browser. Please enable it to use all features of this site.
+        </noscript>
     </footer>
 </body>
 </html>
