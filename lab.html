@@ -11,6 +11,12 @@
   </header>
 
   <main>
+    <!-- picture tag -->
+    <picture>
+      <source srcset="assets/img/profile.webp" type="image/webp">
+      <source srcset="assets/img/profile.png" type="image/png">
+      <img src="assets/img/profile.png" alt="Profile Picture">
+    </picture>     
 
     <!-- video tag -->
     <video controls>
@@ -31,7 +37,7 @@
       const canvas = document.getElementById("myCanvas");
       const ctx = canvas.getContext("2d");
 
-      ctx.fillStyle = "red";
+      ctx.fillStyle = "blue";
       ctx.fillRect(20, 20, 100, 100);
     </script>
 
@@ -39,24 +45,24 @@
 
     <!-- svg tag -->
     <p>
-      Here is a red circle: 
+      Blue circle: 
       <svg width="20" height="20">
-        <circle cx="10" cy="10" r="8" fill="red" />
+        <circle cx="10" cy="10" r="8" fill="blue" />
       </svg>
-      Cool, right?
+      svg tags are cool!
     </p>
 
     <br>
 
     <!-- select, optgroup, option tags-->
     <select>
-      <optgroup label="Frontend">
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
+      <optgroup label="Korean Food">
+        <option>Kimchi</option>
+        <option>Bibimbap</option>
       </optgroup>
-      <optgroup label="Backend">
-        <option value="python">Python</option>
-        <option value="node">Node.js</option>
+      <optgroup label="American Food">
+        <option>Burger</option>
+        <option>Fries</option>
       </optgroup>
     </select>
 
